@@ -1,9 +1,6 @@
 #include "../System/Initialization.h"
 #include "../HardWare/OLED.h"
-#include "../HardWare/dht11.h"
-#include "../HardWare/buzzer.h"
-#include "../HardWare/relay.h"
-#include "../HardWare/Serial.h"
+
 #include "../HardWare/key.h"
 #include "../HardWare/esp8266.h"
 #include "./main.h"

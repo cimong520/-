@@ -5,6 +5,10 @@
 #include "../User/main.h"
 #include "./task.h"
 #include "./Delay.h"				//延时函数头文件
+#include "../HardWare/dht11.h"
+#include "../HardWare/buzzer.h"
+#include "../HardWare/relay.h"
+#include "../HardWare/Serial.h"
 #include "../HardWare/oled.h"					//OLED屏头文件
 #include "../HardWare/key.h"					//按键头文件
 #include "../HardWare/LED.h"					//LED灯头文件

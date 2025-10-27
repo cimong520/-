@@ -750,8 +750,8 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 F (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)()
-F (.\User\main.c)(0x68FB6679)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\HardWare -I .\System --no-multibyte-chars-I.\RTE\_Target_1-ID:\Keli_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keli_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (User\../System/Initialization.h)(0x68BA5BE7)
+F (.\User\main.c)(0x68FECCB0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\HardWare -I .\System --no-multibyte-chars-I.\RTE\_Target_1-ID:\Keli_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keli_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (User\../System/Initialization.h)(0x68FECCB0)
 I (User\../System/../Start/stm32f10x.h)(0x68A3EA20)
 I (User\../System/../Start/./core_cm3.h)(0x6895669E)
 I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -786,6 +786,11 @@ I (D:\Keli_v5\ARM\ARMCC\include\math.h)(0x588B8344)
 I (User\../System/../User/../HardWare/OLED_Data.h)(0x65D2C588)
 I (User\../System/./task.h)(0x68FB65FF)
 I (User\../System/./Delay.h)(0x68F3555A)
+I (User\../System/../HardWare/dht11.h)(0x68F36550)
+I (User\../System/../HardWare/buzzer.h)(0x67CF9B58)
+I (User\../System/../HardWare/relay.h)(0x67DA4C42)
+I (User\../System/../HardWare/Serial.h)(0x62E10821)
+I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (User\../System/../HardWare/oled.h)(0x65409800)
 I (User\../System/../HardWare/key.h)(0x68F5A72D)
 I (User\../System/../HardWare/LED.h)(0x68955ABE)
@@ -793,12 +798,7 @@ I (.\HardWare\MYRTC.h)(0x64B8F5CA)
 I (.\HardWare\esp8266.h)(0x68FB5E73)
 I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (D:\Keli_v5\ARM\ARMCC\include\ctype.h)(0x588B8344)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x588B8344)
-I (User\../HardWare/dht11.h)(0x68F36550)
-I (User\../HardWare/buzzer.h)(0x67CF9B58)
-I (User\../HardWare/relay.h)(0x67DA4C42)
-I (User\../HardWare/Serial.h)(0x62E10821)
 I (User\./menu.h)(0x68F72C52)
 F (.\User\stm32f10x_conf.h)(0x4D99A59E)()
 F (.\User\stm32f10x_it.c)(0x65A90198)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\HardWare -I .\System --no-multibyte-chars-I.\RTE\_Target_1-ID:\Keli_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keli_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
@@ -1372,7 +1372,7 @@ I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x588B8344)
 F (.\System\Initialization.c)(0x68FB539E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\HardWare -I .\System --no-multibyte-chars-I.\RTE\_Target_1-ID:\Keli_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keli_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\initialization.o --omf_browse .\objects\initialization.crf --depend .\objects\initialization.d)
-I (System\./Initialization.h)(0x68BA5BE7)
+I (System\./Initialization.h)(0x68FECCB0)
 I (System\./../Start/stm32f10x.h)(0x68A3EA20)
 I (System\./../Start/./core_cm3.h)(0x6895669E)
 I (D:\Keli_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -1407,6 +1407,11 @@ I (D:\Keli_v5\ARM\ARMCC\include\math.h)(0x588B8344)
 I (System\./../User/../HardWare/OLED_Data.h)(0x65D2C588)
 I (System\././task.h)(0x68FB65FF)
 I (System\././Delay.h)(0x68F3555A)
+I (System\./../HardWare/dht11.h)(0x68F36550)
+I (System\./../HardWare/buzzer.h)(0x67CF9B58)
+I (System\./../HardWare/relay.h)(0x67DA4C42)
+I (System\./../HardWare/Serial.h)(0x62E10821)
+I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (System\./../HardWare/oled.h)(0x65409800)
 I (System\./../HardWare/key.h)(0x68F5A72D)
 I (System\./../HardWare/LED.h)(0x68955ABE)
@@ -1414,6 +1419,5 @@ I (.\HardWare\MYRTC.h)(0x64B8F5CA)
 I (.\HardWare\esp8266.h)(0x68FB5E73)
 I (D:\Keli_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (D:\Keli_v5\ARM\ARMCC\include\ctype.h)(0x588B8344)
-I (D:\Keli_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\Keli_v5\ARM\ARMCC\include\string.h)(0x588B8344)
 I (System\./Initialization_Data.h)(0x68B6BF88)

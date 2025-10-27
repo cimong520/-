@@ -34,6 +34,11 @@
 .\objects\main.o: User\../System/../User/../HardWare/OLED_Data.h
 .\objects\main.o: User\../System/./task.h
 .\objects\main.o: User\../System/./Delay.h
+.\objects\main.o: User\../System/../HardWare/dht11.h
+.\objects\main.o: User\../System/../HardWare/buzzer.h
+.\objects\main.o: User\../System/../HardWare/relay.h
+.\objects\main.o: User\../System/../HardWare/Serial.h
+.\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: User\../System/../HardWare/oled.h
 .\objects\main.o: User\../System/../HardWare/key.h
 .\objects\main.o: User\../System/../HardWare/LED.h
@@ -41,10 +46,5 @@
 .\objects\main.o: .\HardWare\esp8266.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\ctype.h
-.\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\main.o: User\../HardWare/dht11.h
-.\objects\main.o: User\../HardWare/buzzer.h
-.\objects\main.o: User\../HardWare/relay.h
-.\objects\main.o: User\../HardWare/Serial.h
 .\objects\main.o: User\./menu.h
