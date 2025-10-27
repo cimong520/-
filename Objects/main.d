@@ -39,12 +39,12 @@
 .\objects\main.o: User\../System/../HardWare/relay.h
 .\objects\main.o: User\../System/../HardWare/Serial.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: User\../System/../HardWare/oled.h
-.\objects\main.o: User\../System/../HardWare/key.h
-.\objects\main.o: User\../System/../HardWare/LED.h
-.\objects\main.o: .\HardWare\MYRTC.h
-.\objects\main.o: .\HardWare\esp8266.h
+.\objects\main.o: User\../System/../HardWare/esp8266.h
+.\objects\main.o: User\../System/../HardWare/MYRTC.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: User\../System/../HardWare/OLED.h
+.\objects\main.o: User\../System/../HardWare/key.h
+.\objects\main.o: User\../System/../HardWare/LED.h
 .\objects\main.o: User\./menu.h

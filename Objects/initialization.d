@@ -39,12 +39,12 @@
 .\objects\initialization.o: System\./../HardWare/relay.h
 .\objects\initialization.o: System\./../HardWare/Serial.h
 .\objects\initialization.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\initialization.o: System\./../HardWare/oled.h
-.\objects\initialization.o: System\./../HardWare/key.h
-.\objects\initialization.o: System\./../HardWare/LED.h
-.\objects\initialization.o: .\HardWare\MYRTC.h
-.\objects\initialization.o: .\HardWare\esp8266.h
+.\objects\initialization.o: System\./../HardWare/esp8266.h
+.\objects\initialization.o: System\./../HardWare/MYRTC.h
 .\objects\initialization.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\initialization.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\initialization.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\initialization.o: System\./../HardWare/OLED.h
+.\objects\initialization.o: System\./../HardWare/key.h
+.\objects\initialization.o: System\./../HardWare/LED.h
 .\objects\initialization.o: System\./Initialization_Data.h
