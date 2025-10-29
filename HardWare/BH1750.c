@@ -197,5 +197,6 @@ float read_BH1750(void)
 	temp1=dis_data/1.2;
 	temp2=10*dis_data/1.2;	
 	temp2=(int)temp2%10;
+	temp1=(temp1/4095)*100;
 	return temp1;
 }

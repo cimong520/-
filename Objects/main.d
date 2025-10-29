@@ -44,7 +44,12 @@
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\main.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: User\../System/../HardWare/AD.h
+.\objects\main.o: User\../System/../HardWare/Soil.h
+.\objects\main.o: User\../System/../HardWare/BH1750.h
+.\objects\main.o: .\System\sys.h
+.\objects\main.o: User\../System/../HardWare/Feng.h
 .\objects\main.o: User\../System/../HardWare/OLED.h
 .\objects\main.o: User\../System/../HardWare/key.h
 .\objects\main.o: User\../System/../HardWare/LED.h
-.\objects\main.o: User\./menu.h
+.\objects\main.o: User\../System/../User/menu.h

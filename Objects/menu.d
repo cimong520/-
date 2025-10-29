@@ -33,6 +33,8 @@
 .\objects\menu.o: .\HardWare\OLED_Data.h
 .\objects\menu.o: .\System\Delay.h
 .\objects\menu.o: User\menu.h
+.\objects\menu.o: User\main.h
+.\objects\menu.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\menu.o: User\../HardWare/relay.h
 .\objects\menu.o: User\../HardWare/Serial.h
 .\objects\menu.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdio.h

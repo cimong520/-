@@ -1,0 +1,49 @@
+# Keil编译输出
+Objects/
+Listings/
+*.uvguix.*
+!project.uvguix
+*.bak
+*.dep
+*.uvopt
+*.plg
+*.tra
+*.iex
+*.htm
+*.map
+*.lst
+*.axf
+*.lnp
+*.sct
+*.scvd
+*.crf
+*.d
+*.o
+
+# 日志文件
+*.log
+*.log.lock
+
+# 临时文件
+*.tmp
+*~
+wu
+
+# VSCode
+.vscode/*.log
+.vscode/*.lock
+
+# 测试文件夹（如果重新创建）
+土壤湿度传感器/
+继电器/
+蜂鸣器/
+风速传感器/
+BH1750光照/
+dht11温湿度/
+
+# 文档归档
+Docs/
+
+# Windows系统文件
+Thumbs.db
+Desktop.ini

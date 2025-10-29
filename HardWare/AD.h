@@ -1,8 +1,6 @@
 #ifndef __AD_H
 #define __AD_H
 
-// 土壤传感器ADC通道定义 (PA7对应ADC通道7)
-#define SOIL_ADC_CHANNEL    7    // PA7 -> ADC_Channel_7
 
 void AD_Init(void);
 

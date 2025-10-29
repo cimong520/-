@@ -10,7 +10,9 @@ typedef struct
 {
 	float Temp;
 	float Humi;
-	float MH_RD;    // 添加MH_RD字段
+	float Soil;  
+	float Light;
+	float Wind;
 } var;
 /*******************************/
 
@@ -19,6 +21,10 @@ typedef struct
 {
 	float Temp;
 	float Humi;
+	float Soil_Low;
+	float Soil_Up;	
+	float Light_Low;
+	float Light_Up;
 } thresh;
 /*******************************/
 

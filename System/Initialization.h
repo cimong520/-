@@ -10,9 +10,14 @@
 #include "../HardWare/relay.h"
 #include "../HardWare/Serial.h"
 #include "../HardWare/esp8266.h"
+#include "../HardWare/AD.h"                    //土壤湿度
+#include "../HardWare/Soil.h"                   //土壤湿度
+#include "../HardWare/BH1750.h"                //光照传感器
+#include "../HardWare/Feng.h"                  //风速传感器
 #include "../HardWare/OLED.h"
 #include "../HardWare/key.h"					//按键头文件
 #include "../HardWare/LED.h"					//LED灯头文件
+#include "../User/menu.h"					//LED灯头文件
 #include "MYRTC.h"
 
 
@@ -29,6 +34,7 @@ void WIFI_Init(void);
 void upload_data(void);
 void SimpleDrawTempCurve(void);       // 简单的温度曲线函数
 void Update_TempHuim_Display(void);     //温湿度显示函数
+
 void Test_ESP8266(void);               //ESP8266测试
 void Task_Initialization(void);;
 

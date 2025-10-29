@@ -825,6 +825,16 @@
               <FileType>5</FileType>
               <FilePath>.\HardWare\Soil.h</FilePath>
             </File>
+            <File>
+              <FileName>Feng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardWare\Feng.c</FilePath>
+            </File>
+            <File>
+              <FileName>Feng.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HardWare\Feng.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

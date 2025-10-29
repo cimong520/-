@@ -41,6 +41,7 @@
 ".\objects\ad.o"
 ".\objects\bh1750.o"
 ".\objects\soil.o"
+".\objects\feng.o"
 ".\objects\sys.o"
 ".\objects\delay.o"
 ".\objects\task.o"

@@ -1,8 +1,10 @@
 #include "../System/Initialization.h"
 #include "../HardWare/OLED.h"
-
+#include "../HardWare/buzzer.h"
 #include "../HardWare/key.h"
 #include "../HardWare/esp8266.h"
+#include "../HardWare/Feng.h"
+#include "../HardWare/Serial.h"
 #include "./main.h"
 #include "./menu.h"
 #include <string.h>
@@ -37,21 +39,7 @@ uint8_t main_mode_flag  = 0, main_key_flag = 0 ;
 //    OLED_Update();
 //}
 //模式选择
-void Mode(void) {
-    if(Get_Key_3() == 3) {
-        if(main_mode_flag == 0) {
-            main_mode_flag = 1;  // 进入手动模式
-        } else {
-            // 在手动模式下，按键3控制继电器
-            main_key_flag++;
-            if((main_key_flag % 2) == 1) {
-                relay_ON();
-            } else {
-                relay_OFF();
-            }
-        }
-    }
-}
+
 
 
 // 手动连接巴法云的函数
@@ -100,35 +88,32 @@ int main(void)
 	SystemInit();  
 	Delay_Init();	
 	Initialization();  // 系统初始化（包含OLED、按键、ESP8266、任务系统等
-	
-	uint32_t start_time = Task_GetSystemTime();
+	Feng_Init();       // 风速传感器初始化
 	
 	//变量
-	Serial_SendString("mode");
-	//static uint32_t last_temp_read = 0;
+	Serial_SendString("System Start - Wind Sensor Test\r\n");
+	static uint32_t last_wind_read = 0;
 	
 	while(1)
 	{	
 		uint32_t current_time = Task_GetSystemTime();
 		
-		
-		if( Get_Key_2() == 2 ){
-			// 按键2：手动更新WiFi连接状态
-			if(strstr(saved_ip, "172.168") || strstr(saved_ip, "192.168")) {
-				Serial_SendString("按键2按下 - 手动更新WiFi连接状态...\r\n");
-				connect_flag = 1;
-				strcpy(saved_status, "已连接");
-				Serial_SendString("WiFi连接状态已更新为：已连接\r\n");
-			} else {
-				Serial_SendString("按键2按下 - 但未检测到有效IP地址\r\n");
-				// menu2();  // 如果需要原来的菜单功能，取消注释这行
-			}
+		// 每2秒读取并打印风速传感器AD值
+		if((current_time - last_wind_read) > 1000) {
+			last_wind_read = current_time;
 		}
 		
-		// 按键1连接巴法云
+		if( Get_Key_2() == 2 ){
+			menu2();
+		}
+		
 		if(Get_Key_1() == 1) {
-			Serial_SendString("按键1按下 - 尝试连接巴法云...\r\n");
-			Connect_To_BaFa_Cloud();
+			static uint8_t keynum = 0;
+			keynum++;
+			Serial_SendNumber(keynum , 2);
+			if((keynum%2)== 1){
+				Buzzer_ON();
+			}else Buzzer_OFF();
 		}
 		
 		// 按键3手动设置巴法云连接状态（长按或多次按）
@@ -155,16 +140,7 @@ int main(void)
 		
 		// 按键4手动上传数据
 		if(Get_Key_4() == 4) {
-			Serial_SendString("\r\n=== 手动上传数据测试 ===\r\n");
-			Serial_SendString("当前温度: ");
-			Serial_SendNumber((uint32_t)data.Variable.Temp, 2);
-			Serial_SendString("°C\r\n");
-			Serial_SendString("当前湿度: ");
-			Serial_SendNumber((uint32_t)data.Variable.Humi, 2);
-			Serial_SendString("%\r\n");
-			Serial_SendString("开始上传...\r\n");
-			upload_data();
-			Serial_SendString("========================\r\n");
+			Serial_SendNumber(mode_flag, 2);
 		}
 		
 		Manual_Mode();

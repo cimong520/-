@@ -44,7 +44,13 @@
 .\objects\initialization.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\initialization.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\initialization.o: D:\Keli_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\initialization.o: System\./../HardWare/AD.h
+.\objects\initialization.o: System\./../HardWare/Soil.h
+.\objects\initialization.o: System\./../HardWare/BH1750.h
+.\objects\initialization.o: .\System\sys.h
+.\objects\initialization.o: System\./../HardWare/Feng.h
 .\objects\initialization.o: System\./../HardWare/OLED.h
 .\objects\initialization.o: System\./../HardWare/key.h
 .\objects\initialization.o: System\./../HardWare/LED.h
+.\objects\initialization.o: System\./../User/menu.h
 .\objects\initialization.o: System\./Initialization_Data.h
